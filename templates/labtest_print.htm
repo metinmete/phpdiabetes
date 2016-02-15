@@ -1,0 +1,215 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-print" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_pdf}
+<div class="rnr-c rnr-ch rnr-c-pdf">
+
+{BEGIN printbuttons}
+<div  class="style1 rnr-bl rnr-b-printbuttons {$brickclass_printbuttons}">{BEGIN divideintopages_block}
+<a href="#" class="divideintopages rnr-button button" {$divideintopages_attrs}>Prepare for printing</a>
+{END divideintopages_block}
+{BEGIN pdflink_block}
+<a href="#" class="pdflink rnr-button button" {$pdflink_attrs}>PDF View</a>
+{END pdflink_block}
+</div>
+{END printbuttons}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_pdf}
+
+
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+
+{BEGIN container_pageheader}
+<div class="rnr-c rnr-cv rnr-c-pageheader">
+
+{BEGIN printheader}
+<div  class="rnr-brickcontents style1 rnr-b-printheader {$brickclass_printheader}">	<h1>{$pagetitlelabel labtest print}</h1>
+</div>{END printheader}
+
+
+{BEGIN page_number}
+<div  class="rnr-brickcontents style1 rnr-b-page_of_print {$brickclass_page_of_print}"><h1>Page <span class="rp-pageno">{$pageno}</span> of <span class="rp-pagecount">{$pagecount}</span></h1></div>{END page_number}
+
+
+</div>
+{END container_pageheader}
+
+
+
+{BEGIN container_grid}
+
+
+{BEGIN grid_block}
+	<table class="rnr-c rnr-c-grid rnr-b-grid rnr-gridtable rp-maintable" cellpadding="0">
+	<thead>
+	{BEGIN grid_header}
+<tr class="rnr-toprow style1 {$gridHeader_class}" >
+{BEGIN record_header}
+		{BEGIN id_fieldheadercolumn}
+<th class="runner-cc {$id_class}" {$id_style}>
+	{BEGIN id_fieldheader}
+	<b>{$label labtest id}</b>
+	{END id_fieldheader}
+</th>
+{END id_fieldheadercolumn}
+	{BEGIN date_fieldheadercolumn}
+<th class="runner-cc {$date_class}" {$date_style}>
+	{BEGIN date_fieldheader}
+	<b>{$label labtest date}</b>
+	{END date_fieldheader}
+</th>
+{END date_fieldheadercolumn}
+	{BEGIN type_fieldheadercolumn}
+<th class="runner-cc {$type_class}" {$type_style}>
+	{BEGIN type_fieldheader}
+	<b>{$label labtest type}</b>
+	{END type_fieldheader}
+</th>
+{END type_fieldheadercolumn}
+	{BEGIN result_fieldheadercolumn}
+<th class="runner-cc {$result_class}" {$result_style}>
+	{BEGIN result_fieldheader}
+	<b>{$label labtest result}</b>
+	{END result_fieldheader}
+</th>
+{END result_fieldheadercolumn}
+	{BEGIN unit_fieldheadercolumn}
+<th class="runner-cc {$unit_class}" {$unit_style}>
+	{BEGIN unit_fieldheader}
+	<b>{$label labtest unit}</b>
+	{END unit_fieldheader}
+</th>
+{END unit_fieldheadercolumn}
+	{BEGIN range_fieldheadercolumn}
+<th class="runner-cc {$range_class}" {$range_style}>
+	{BEGIN range_fieldheader}
+	<b>{$label labtest range}</b>
+	{END range_fieldheader}
+</th>
+{END range_fieldheadercolumn}
+	{BEGIN comments_fieldheadercolumn}
+<th class="runner-cc {$comments_class}" {$comments_style}>
+	{BEGIN comments_fieldheader}
+	<b>{$label labtest comments}</b>
+	{END comments_fieldheader}
+</th>
+{END comments_fieldheadercolumn}
+		
+	<th class="rnr-edge">&nbsp;</th>
+	{BEGIN endrecordheader_block}
+	<th class="rnr-cs">&nbsp;</th>
+	{END endrecordheader_block}
+	{END record_header}
+</tr>
+{END grid_header}
+
+	</thead>
+	<tbody>	
+	{BEGIN grid_row}
+	<tr class="rnr-row style1 {$rowclass}" {$rowattrs} {$rowstyle}>
+		{BEGIN grid_record}
+				{BEGIN id_fieldcolumn}
+<td  class="runner-cc {$id_class}" {$id_style} {$recordattrs}>
+	{$id_value}
+</td>
+{END id_fieldcolumn}
+	{BEGIN date_fieldcolumn}
+<td  class="runner-cc {$date_class}" {$date_style} {$recordattrs}>
+	{$date_value}
+</td>
+{END date_fieldcolumn}
+	{BEGIN type_fieldcolumn}
+<td  class="runner-cc {$type_class}" {$type_style} {$recordattrs}>
+	{$type_value}
+</td>
+{END type_fieldcolumn}
+	{BEGIN result_fieldcolumn}
+<td  class="runner-cc {$result_class}" {$result_style} {$recordattrs}>
+	{$result_value}
+</td>
+{END result_fieldcolumn}
+	{BEGIN unit_fieldcolumn}
+<td  class="runner-cc {$unit_class}" {$unit_style} {$recordattrs}>
+	{$unit_value}
+</td>
+{END unit_fieldcolumn}
+	{BEGIN range_fieldcolumn}
+<td  class="runner-cc {$range_class}" {$range_style} {$recordattrs}>
+	{$range_value}
+</td>
+{END range_fieldcolumn}
+	{BEGIN comments_fieldcolumn}
+<td  class="runner-cc {$comments_class}" {$comments_style} {$recordattrs}>
+	{$comments_value}
+</td>
+{END comments_fieldcolumn}
+
+		<td class="rnr-edge" {$recordattrs}>&nbsp;</td>
+		{BEGIN endrecord_block}
+		<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+		{END endrecord_block}
+										
+		{END grid_record}
+
+	</tr>
+	{END grid_row}
+
+
+	
+	</tbody>
+</table>
+
+{END grid_block}
+
+
+
+{END container_grid}
+
+
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

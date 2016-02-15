@@ -1,0 +1,63 @@
+<div {$pageattrs}>
+
+{BEGIN container_masterlistheader}
+<div class="rnr-c rnr-ch rnr-c-masterlistheader">
+
+
+<div  class="style1 rnr-bl rnr-b-masterlistheader {$brickclass_masterlistheader}">	<h1>{$pagetitlelabel users masterlist}</h1>
+</div>
+
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_masterlistheader}
+
+
+
+{BEGIN container_mastergrid}
+
+
+
+<table class="rnr-c rnr-cont rnr-c-mastergrid rnr-b-mastergridfields rnr-gridtable" cellpadding="0" >
+	<thead>
+		<tr class="rnr-toprow style1 {$gridHeader_class}" >
+			<th class="{$id_class}">{$label users id}</th>
+			<th class="{$first_name_class}">{$label users first_name}</th>
+			<th class="{$last_name_class}">{$label users last_name}</th>
+			<th class="{$address1_class}">{$label users address1}</th>
+			<th class="{$address2_class}">{$label users address2}</th>
+			<th class="{$address3_class}">{$label users address3}</th>
+			<th class="{$city_class}">{$label users city}</th>
+			<th class="{$state_class}">{$label users state}</th>
+			<th class="{$zip_class}">{$label users zip}</th>
+			<th class="{$email_class}">{$label users email}</th>
+			<th class="{$phonetype_class}">{$label users phonetype}</th>
+			<th class="{$phonenumber_class}">{$label users phonenumber}</th>
+			<th class="rnr-edge">&nbsp;</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="rnr-row style1">
+			<td class="{$id_class}">{$id_mastervalue}</td>
+			<td class="{$first_name_class}">{$first_name_mastervalue}</td>
+			<td class="{$last_name_class}">{$last_name_mastervalue}</td>
+			<td class="{$address1_class}">{$address1_mastervalue}</td>
+			<td class="{$address2_class}">{$address2_mastervalue}</td>
+			<td class="{$address3_class}">{$address3_mastervalue}</td>
+			<td class="{$city_class}">{$city_mastervalue}</td>
+			<td class="{$state_class}">{$state_mastervalue}</td>
+			<td class="{$zip_class}">{$zip_mastervalue}</td>
+			<td class="{$email_class}">{$email_mastervalue}</td>
+			<td class="{$phonetype_class}">{$phonetype_mastervalue}</td>
+			<td class="{$phonenumber_class}">{$phonenumber_mastervalue}</td>
+			<td class="rnr-edge">&nbsp;</td>
+		</tr>
+	</tbody>
+</table> 
+
+
+
+
+{END container_mastergrid}
+
+</div>

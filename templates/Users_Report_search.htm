@@ -1,0 +1,319 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+{BEGIN searchheader}
+<div  class="rnr-brickcontents style2 rnr-b-srchheader {$brickclass_srchheader}"><span>	<h1>{$pagetitlelabel Users_Report search}</h1>
+</span></div>{END searchheader}
+
+
+{BEGIN conditions_block}
+<div  class="rnr-brickcontents style1 rnr-b-srchconditions {$brickclass_srchconditions}">	<center>
+	<span class=fieldname>Criteria:&nbsp;</span>	
+	<input type="radio" class="rnr-radio-button" name="srchType{$id}" {$all_checkbox}><label for="all_checkbox"> All conditions</label>
+	&nbsp;&nbsp;&nbsp;
+	<input type="radio" class="rnr-radio-button" name="srchType{$id}" {$any_checkbox}><label for="any_checkbox"> Any condition</label>
+	</center></div>{END conditions_block}
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-srchfields {$brickclass_srchfields}"><table class="fieldGrid">
+	<tr>
+		<td>&nbsp;</td>
+		<td>NOT</td>
+		<td colspan=3>&nbsp; </td>
+	</tr>
+	<tr class="{$fielddispclass_id}">
+	{BEGIN id_fieldblock}		
+	<td>
+		{$label Users_Report id}
+	</td>
+	<td>
+		<input type="checkbox" {$id_notbox}>
+	</td>
+	<td>
+		{$searchtype_id}
+	</td>
+	<td>
+		{$id_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$id_editcontrol1}&nbsp;
+	</td>
+{END id_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_first_name}">
+	{BEGIN first_name_fieldblock}		
+	<td>
+		{$label Users_Report first_name}
+	</td>
+	<td>
+		<input type="checkbox" {$first_name_notbox}>
+	</td>
+	<td>
+		{$searchtype_first_name}
+	</td>
+	<td>
+		{$first_name_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$first_name_editcontrol1}&nbsp;
+	</td>
+{END first_name_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_last_name}">
+	{BEGIN last_name_fieldblock}		
+	<td>
+		{$label Users_Report last_name}
+	</td>
+	<td>
+		<input type="checkbox" {$last_name_notbox}>
+	</td>
+	<td>
+		{$searchtype_last_name}
+	</td>
+	<td>
+		{$last_name_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$last_name_editcontrol1}&nbsp;
+	</td>
+{END last_name_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_address1}">
+	{BEGIN address1_fieldblock}		
+	<td>
+		{$label Users_Report address1}
+	</td>
+	<td>
+		<input type="checkbox" {$address1_notbox}>
+	</td>
+	<td>
+		{$searchtype_address1}
+	</td>
+	<td>
+		{$address1_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$address1_editcontrol1}&nbsp;
+	</td>
+{END address1_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_address2}">
+	{BEGIN address2_fieldblock}		
+	<td>
+		{$label Users_Report address2}
+	</td>
+	<td>
+		<input type="checkbox" {$address2_notbox}>
+	</td>
+	<td>
+		{$searchtype_address2}
+	</td>
+	<td>
+		{$address2_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$address2_editcontrol1}&nbsp;
+	</td>
+{END address2_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_address3}">
+	{BEGIN address3_fieldblock}		
+	<td>
+		{$label Users_Report address3}
+	</td>
+	<td>
+		<input type="checkbox" {$address3_notbox}>
+	</td>
+	<td>
+		{$searchtype_address3}
+	</td>
+	<td>
+		{$address3_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$address3_editcontrol1}&nbsp;
+	</td>
+{END address3_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_city}">
+	{BEGIN city_fieldblock}		
+	<td>
+		{$label Users_Report city}
+	</td>
+	<td>
+		<input type="checkbox" {$city_notbox}>
+	</td>
+	<td>
+		{$searchtype_city}
+	</td>
+	<td>
+		{$city_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$city_editcontrol1}&nbsp;
+	</td>
+{END city_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_state}">
+	{BEGIN state_fieldblock}		
+	<td>
+		{$label Users_Report state}
+	</td>
+	<td>
+		<input type="checkbox" {$state_notbox}>
+	</td>
+	<td>
+		{$searchtype_state}
+	</td>
+	<td>
+		{$state_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$state_editcontrol1}&nbsp;
+	</td>
+{END state_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_zip}">
+	{BEGIN zip_fieldblock}		
+	<td>
+		{$label Users_Report zip}
+	</td>
+	<td>
+		<input type="checkbox" {$zip_notbox}>
+	</td>
+	<td>
+		{$searchtype_zip}
+	</td>
+	<td>
+		{$zip_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$zip_editcontrol1}&nbsp;
+	</td>
+{END zip_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_email}">
+	{BEGIN email_fieldblock}		
+	<td>
+		{$label Users_Report email}
+	</td>
+	<td>
+		<input type="checkbox" {$email_notbox}>
+	</td>
+	<td>
+		{$searchtype_email}
+	</td>
+	<td>
+		{$email_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$email_editcontrol1}&nbsp;
+	</td>
+{END email_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_phonetype}">
+	{BEGIN phonetype_fieldblock}		
+	<td>
+		{$label Users_Report phonetype}
+	</td>
+	<td>
+		<input type="checkbox" {$phonetype_notbox}>
+	</td>
+	<td>
+		{$searchtype_phonetype}
+	</td>
+	<td>
+		{$phonetype_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$phonetype_editcontrol1}&nbsp;
+	</td>
+{END phonetype_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_phonenumber}">
+	{BEGIN phonenumber_fieldblock}		
+	<td>
+		{$label Users_Report phonenumber}
+	</td>
+	<td>
+		<input type="checkbox" {$phonenumber_notbox}>
+	</td>
+	<td>
+		{$searchtype_phonenumber}
+	</td>
+	<td>
+		{$phonenumber_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$phonenumber_editcontrol1}&nbsp;
+	</td>
+{END phonenumber_fieldblock}
+	</tr>
+
+</table></div>
+
+
+{BEGIN searchbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-srchbuttons {$brickclass_srchbuttons}">{BEGIN search_button}
+<a href="#" class="rnr-button main" {$searchbutton_attrs}>Search</a>
+{END search_button} 
+{BEGIN reset_button}
+<a href="#" class="rnr-button" {$resetbutton_attrs}>Reset</a>
+{END reset_button}
+{BEGIN back_button}
+<a href="#" class="rnr-button" {$backbutton_attrs}>Back to list</a>
+{END back_button}</div>{END searchbuttons}
+
+
+</div>
+{END container_fields}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

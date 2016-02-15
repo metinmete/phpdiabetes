@@ -1,0 +1,215 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-print" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_pdf}
+<div class="rnr-c rnr-ch rnr-c-pdf">
+
+{BEGIN printbuttons}
+<div  class="style1 rnr-bl rnr-b-printbuttons {$brickclass_printbuttons}">{BEGIN divideintopages_block}
+<a href="#" class="divideintopages rnr-button button" {$divideintopages_attrs}>Prepare for printing</a>
+{END divideintopages_block}
+{BEGIN pdflink_block}
+<a href="#" class="pdflink rnr-button button" {$pdflink_attrs}>PDF View</a>
+{END pdflink_block}
+</div>
+{END printbuttons}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_pdf}
+
+
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+
+{BEGIN container_pageheader}
+<div class="rnr-c rnr-cv rnr-c-pageheader">
+
+{BEGIN printheader}
+<div  class="rnr-brickcontents style1 rnr-b-printheader {$brickclass_printheader}">	<h1>{$pagetitlelabel readings print}</h1>
+</div>{END printheader}
+
+
+{BEGIN page_number}
+<div  class="rnr-brickcontents style1 rnr-b-page_of_print {$brickclass_page_of_print}"><h1>Page <span class="rp-pageno">{$pageno}</span> of <span class="rp-pagecount">{$pagecount}</span></h1></div>{END page_number}
+
+
+</div>
+{END container_pageheader}
+
+
+
+{BEGIN container_grid}
+
+
+{BEGIN grid_block}
+	<table class="rnr-c rnr-c-grid rnr-b-grid rnr-gridtable rp-maintable" cellpadding="0">
+	<thead>
+	{BEGIN grid_header}
+<tr class="rnr-toprow style1 {$gridHeader_class}" >
+{BEGIN record_header}
+		{BEGIN read_date_fieldheadercolumn}
+<th class="runner-cc {$read_date_class}" {$read_date_style}>
+	{BEGIN read_date_fieldheader}
+	<b>{$label readings read_date}</b>
+	{END read_date_fieldheader}
+</th>
+{END read_date_fieldheadercolumn}
+	{BEGIN read_time_fieldheadercolumn}
+<th class="runner-cc {$read_time_class}" {$read_time_style}>
+	{BEGIN read_time_fieldheader}
+	<b>{$label readings read_time}</b>
+	{END read_time_fieldheader}
+</th>
+{END read_time_fieldheadercolumn}
+	{BEGIN time_period_fieldheadercolumn}
+<th class="runner-cc {$time_period_class}" {$time_period_style}>
+	{BEGIN time_period_fieldheader}
+	<b>{$label readings time_period}</b>
+	{END time_period_fieldheader}
+</th>
+{END time_period_fieldheadercolumn}
+	{BEGIN glucose_value_fieldheadercolumn}
+<th class="runner-cc {$glucose_value_class}" {$glucose_value_style}>
+	{BEGIN glucose_value_fieldheader}
+	<b>{$label readings glucose_value}</b>
+	{END glucose_value_fieldheader}
+</th>
+{END glucose_value_fieldheadercolumn}
+	{BEGIN sample_site_fieldheadercolumn}
+<th class="runner-cc {$sample_site_class}" {$sample_site_style}>
+	{BEGIN sample_site_fieldheader}
+	<b>{$label readings sample_site}</b>
+	{END sample_site_fieldheader}
+</th>
+{END sample_site_fieldheadercolumn}
+	{BEGIN last_meal_fieldheadercolumn}
+<th class="runner-cc {$last_meal_class}" {$last_meal_style}>
+	{BEGIN last_meal_fieldheader}
+	<b>{$label readings last_meal}</b>
+	{END last_meal_fieldheader}
+</th>
+{END last_meal_fieldheadercolumn}
+	{BEGIN comment_fieldheadercolumn}
+<th class="runner-cc {$comment_class}" {$comment_style}>
+	{BEGIN comment_fieldheader}
+	<b>{$label readings comment}</b>
+	{END comment_fieldheader}
+</th>
+{END comment_fieldheadercolumn}
+		
+	<th class="rnr-edge">&nbsp;</th>
+	{BEGIN endrecordheader_block}
+	<th class="rnr-cs">&nbsp;</th>
+	{END endrecordheader_block}
+	{END record_header}
+</tr>
+{END grid_header}
+
+	</thead>
+	<tbody>	
+	{BEGIN grid_row}
+	<tr class="rnr-row style1 {$rowclass}" {$rowattrs} {$rowstyle}>
+		{BEGIN grid_record}
+				{BEGIN read_date_fieldcolumn}
+<td  class="runner-cc {$read_date_class}" {$read_date_style} {$recordattrs}>
+	{$read_date_value}
+</td>
+{END read_date_fieldcolumn}
+	{BEGIN read_time_fieldcolumn}
+<td  class="runner-cc {$read_time_class}" {$read_time_style} {$recordattrs}>
+	{$read_time_value}
+</td>
+{END read_time_fieldcolumn}
+	{BEGIN time_period_fieldcolumn}
+<td  class="runner-cc {$time_period_class}" {$time_period_style} {$recordattrs}>
+	{$time_period_value}
+</td>
+{END time_period_fieldcolumn}
+	{BEGIN glucose_value_fieldcolumn}
+<td  class="runner-cc {$glucose_value_class}" {$glucose_value_style} {$recordattrs}>
+	{$glucose_value_value}
+</td>
+{END glucose_value_fieldcolumn}
+	{BEGIN sample_site_fieldcolumn}
+<td  class="runner-cc {$sample_site_class}" {$sample_site_style} {$recordattrs}>
+	{$sample_site_value}
+</td>
+{END sample_site_fieldcolumn}
+	{BEGIN last_meal_fieldcolumn}
+<td  class="runner-cc {$last_meal_class}" {$last_meal_style} {$recordattrs}>
+	{$last_meal_value}
+</td>
+{END last_meal_fieldcolumn}
+	{BEGIN comment_fieldcolumn}
+<td  class="runner-cc {$comment_class}" {$comment_style} {$recordattrs}>
+	{$comment_value}
+</td>
+{END comment_fieldcolumn}
+
+		<td class="rnr-edge" {$recordattrs}>&nbsp;</td>
+		{BEGIN endrecord_block}
+		<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+		{END endrecord_block}
+										
+		{END grid_record}
+
+	</tr>
+	{END grid_row}
+
+
+	
+	</tbody>
+</table>
+
+{END grid_block}
+
+
+
+{END container_grid}
+
+
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

@@ -1,0 +1,205 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-add" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_all}
+<div class="rnr-c rnr-cv rnr-c-all">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_add} rnr-wrapper rnr-cbw-add">
+
+{BEGIN container_add}
+<div class="rnr-c rnr-cv rnr-c-add">
+
+{BEGIN addheader}
+<div  class="rnr-brickcontents style2 rnr-b-addheader {$brickclass_addheader}"><span>	<h1>{$pagetitlelabel meal add}</h1>
+</span></div>{END addheader}
+
+
+{BEGIN message_block}
+<div  class="rnr-brickcontents style1 rnr-b-message {$brickclass_message}"><div class="rnr-message">{$message}</div></div>{END message_block}
+
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-addfields {$brickclass_addfields}"><table class="fieldGrid">
+	{BEGIN date_fieldblock}
+<tr class="{$fielddispclass_date}" data-fieldname="date">
+	<td class="rnr-label">
+		{BEGIN date_label}{$label meal date}{END date_label}
+	</td>
+	<td class="rnr-control style3">
+		{$date_editcontrol}&nbsp;
+	</td>
+</tr>
+{END date_fieldblock}
+	{BEGIN time_fieldblock}
+<tr class="{$fielddispclass_time}" data-fieldname="time">
+	<td class="rnr-label">
+		{BEGIN time_label}{$label meal time}{END time_label}
+	</td>
+	<td class="rnr-control style3">
+		{$time_editcontrol}&nbsp;
+	</td>
+</tr>
+{END time_fieldblock}
+	{BEGIN meal_fieldblock}
+<tr class="{$fielddispclass_meal}" data-fieldname="meal">
+	<td class="rnr-label">
+		{BEGIN meal_label}{$label meal meal}{END meal_label}
+	</td>
+	<td class="rnr-control style3">
+		{$meal_editcontrol}&nbsp;
+	</td>
+</tr>
+{END meal_fieldblock}
+	{BEGIN food_item_fieldblock}
+<tr class="{$fielddispclass_food_item}" data-fieldname="food_item">
+	<td class="rnr-label">
+		{BEGIN food_item_label}{$label meal food_item}{END food_item_label}
+	</td>
+	<td class="rnr-control style3">
+		{$food_item_editcontrol}&nbsp;
+	</td>
+</tr>
+{END food_item_fieldblock}
+	{BEGIN svgs_fieldblock}
+<tr class="{$fielddispclass_svgs}" data-fieldname="svgs">
+	<td class="rnr-label">
+		{BEGIN svgs_label}{$label meal svgs}{END svgs_label}
+	</td>
+	<td class="rnr-control style3">
+		{$svgs_editcontrol}&nbsp;
+	</td>
+</tr>
+{END svgs_fieldblock}
+	{BEGIN carbs_fieldblock}
+<tr class="{$fielddispclass_carbs}" data-fieldname="carbs">
+	<td class="rnr-label">
+		{BEGIN carbs_label}{$label meal carbs}{END carbs_label}
+	</td>
+	<td class="rnr-control style3">
+		{$carbs_editcontrol}&nbsp;
+	</td>
+</tr>
+{END carbs_fieldblock}
+	{BEGIN totalcarbs_fieldblock}
+<tr class="{$fielddispclass_totalcarbs}" data-fieldname="totalcarbs">
+	<td class="rnr-label">
+		{BEGIN totalcarbs_label}{$label meal totalcarbs}{END totalcarbs_label}
+	</td>
+	<td class="rnr-control style3">
+		{$totalcarbs_editcontrol}&nbsp;
+	</td>
+</tr>
+{END totalcarbs_fieldblock}
+	{BEGIN favorite_fieldblock}
+<tr class="{$fielddispclass_favorite}" data-fieldname="favorite">
+	<td class="rnr-label">
+		{BEGIN favorite_label}{$label meal favorite}{END favorite_label}
+	</td>
+	<td class="rnr-control style3">
+		{$favorite_editcontrol}&nbsp;
+	</td>
+</tr>
+{END favorite_fieldblock}
+	{BEGIN comment_fieldblock}
+<tr class="{$fielddispclass_comment}" data-fieldname="comment">
+	<td class="rnr-label">
+		{BEGIN comment_label}{$label meal comment}{END comment_label}
+	</td>
+	<td class="rnr-control style3">
+		{$comment_editcontrol}&nbsp;
+	</td>
+</tr>
+{END comment_fieldblock}
+</table></div>
+
+
+{BEGIN addbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-addbuttons {$brickclass_addbuttons}"><div class="rnr-buttons-left">
+		{BEGIN save_button}
+	<a href="#" class="rnr-button main" id="saveButton{$id}" {$savebutton_attrs}>Save</a>
+	{END save_button}
+	{BEGIN reset_button}
+	<a href="#" class="rnr-button" id="resetButton{$id}">Reset</a>
+	{END reset_button}
+	{BEGIN cancel_button}
+	<a href="#" class="rnr-button" id="cancelButton{$id}">Cancel</a>
+	{END cancel_button}
+	{BEGIN back_button}
+	<a href="#" class="rnr-button" id="backButton{$id}">Back to list</a>
+	{END back_button}
+	{BEGIN backToMenu_button}
+	<a href="#" class="rnr-button" id="backToMenuButton{$id}">Back to menu</a>
+	{END backToMenu_button}
+</div>
+</div>{END addbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+</div>
+{END container_add}
+
+</div>
+
+
+
+</div>
+{END container_all}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

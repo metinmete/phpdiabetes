@@ -1,0 +1,255 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_search}
+<div class="rnr-c rnr-cv rnr-c-search">
+
+{BEGIN searchheader}
+<div  class="rnr-brickcontents style2 rnr-b-srchheader {$brickclass_srchheader}"><span>	<h1>{$pagetitlelabel medication search}</h1>
+</span></div>{END searchheader}
+
+
+{BEGIN conditions_block}
+<div  class="rnr-brickcontents style1 rnr-b-srchconditions {$brickclass_srchconditions}">	<center>
+	<span class=fieldname>Criteria:&nbsp;</span>	
+	<input type="radio" class="rnr-radio-button" name="srchType{$id}" {$all_checkbox}><label for="all_checkbox"> All conditions</label>
+	&nbsp;&nbsp;&nbsp;
+	<input type="radio" class="rnr-radio-button" name="srchType{$id}" {$any_checkbox}><label for="any_checkbox"> Any condition</label>
+	</center></div>{END conditions_block}
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-srchfields {$brickclass_srchfields}"><table class="fieldGrid">
+	<tr>
+		<td>&nbsp;</td>
+		<td>NOT</td>
+		<td colspan=3>&nbsp; </td>
+	</tr>
+	<tr class="{$fielddispclass_id}">
+	{BEGIN id_fieldblock}		
+	<td>
+		{$label medication id}
+	</td>
+	<td>
+		<input type="checkbox" {$id_notbox}>
+	</td>
+	<td>
+		{$searchtype_id}
+	</td>
+	<td>
+		{$id_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$id_editcontrol1}&nbsp;
+	</td>
+{END id_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_date}">
+	{BEGIN date_fieldblock}		
+	<td>
+		{$label medication date}
+	</td>
+	<td>
+		<input type="checkbox" {$date_notbox}>
+	</td>
+	<td>
+		{$searchtype_date}
+	</td>
+	<td>
+		{$date_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$date_editcontrol1}&nbsp;
+	</td>
+{END date_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_time}">
+	{BEGIN time_fieldblock}		
+	<td>
+		{$label medication time}
+	</td>
+	<td>
+		<input type="checkbox" {$time_notbox}>
+	</td>
+	<td>
+		{$searchtype_time}
+	</td>
+	<td>
+		{$time_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$time_editcontrol1}&nbsp;
+	</td>
+{END time_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_time_period}">
+	{BEGIN time_period_fieldblock}		
+	<td>
+		{$label medication time_period}
+	</td>
+	<td>
+		<input type="checkbox" {$time_period_notbox}>
+	</td>
+	<td>
+		{$searchtype_time_period}
+	</td>
+	<td>
+		{$time_period_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$time_period_editcontrol1}&nbsp;
+	</td>
+{END time_period_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_medication}">
+	{BEGIN medication_fieldblock}		
+	<td>
+		{$label medication medication}
+	</td>
+	<td>
+		<input type="checkbox" {$medication_notbox}>
+	</td>
+	<td>
+		{$searchtype_medication}
+	</td>
+	<td>
+		{$medication_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$medication_editcontrol1}&nbsp;
+	</td>
+{END medication_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_dose}">
+	{BEGIN dose_fieldblock}		
+	<td>
+		{$label medication dose}
+	</td>
+	<td>
+		<input type="checkbox" {$dose_notbox}>
+	</td>
+	<td>
+		{$searchtype_dose}
+	</td>
+	<td>
+		{$dose_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$dose_editcontrol1}&nbsp;
+	</td>
+{END dose_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_no_pills}">
+	{BEGIN no_pills_fieldblock}		
+	<td>
+		{$label medication no_pills}
+	</td>
+	<td>
+		<input type="checkbox" {$no_pills_notbox}>
+	</td>
+	<td>
+		{$searchtype_no_pills}
+	</td>
+	<td>
+		{$no_pills_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$no_pills_editcontrol1}&nbsp;
+	</td>
+{END no_pills_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_comments}">
+	{BEGIN comments_fieldblock}		
+	<td>
+		{$label medication comments}
+	</td>
+	<td>
+		<input type="checkbox" {$comments_notbox}>
+	</td>
+	<td>
+		{$searchtype_comments}
+	</td>
+	<td>
+		{$comments_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$comments_editcontrol1}&nbsp;
+	</td>
+{END comments_fieldblock}
+	</tr>
+
+</table></div>
+
+
+{BEGIN searchbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-srchbuttons {$brickclass_srchbuttons}">{BEGIN search_button}
+<a href="#" class="rnr-button main" {$searchbutton_attrs}>Search</a>
+{END search_button} 
+{BEGIN reset_button}
+<a href="#" class="rnr-button" {$resetbutton_attrs}>Reset</a>
+{END reset_button}
+{BEGIN back_button}
+<a href="#" class="rnr-button" {$backbutton_attrs}>Back to list</a>
+{END back_button}</div>{END searchbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+</div>
+{END container_search}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

@@ -1,0 +1,286 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-print" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_pdf}
+<div class="rnr-c rnr-ch rnr-c-pdf">
+
+{BEGIN printbuttons}
+<div  class="style1 rnr-bl rnr-b-printbuttons {$brickclass_printbuttons}">{BEGIN divideintopages_block}
+<a href="#" class="divideintopages rnr-button button" {$divideintopages_attrs}>Prepare for printing</a>
+{END divideintopages_block}
+</div>
+{END printbuttons}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_pdf}
+
+
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+
+{BEGIN container_pageheader}
+<div class="rnr-c rnr-cv rnr-c-pageheader">
+
+{BEGIN printheader}
+<div  class="rnr-brickcontents style1 rnr-b-printheader {$brickclass_printheader}">	<h1>{$pagetitlelabel users print}</h1>
+</div>{END printheader}
+
+
+{BEGIN page_number}
+<div  class="rnr-brickcontents style1 rnr-b-page_of_print {$brickclass_page_of_print}"><h1>Page <span class="rp-pageno">{$pageno}</span> of <span class="rp-pagecount">{$pagecount}</span></h1></div>{END page_number}
+
+
+</div>
+{END container_pageheader}
+
+
+
+{BEGIN container_grid}
+
+
+{BEGIN grid_block}
+	<table class="rnr-c rnr-c-grid rnr-b-grid rnr-gridtable rp-maintable" cellpadding="0">
+	<thead>
+	{BEGIN grid_header}
+<tr class="rnr-toprow style1 {$gridHeader_class}" >
+{BEGIN record_header}
+		{BEGIN id_fieldheadercolumn}
+<th class="runner-cc {$id_class}" {$id_style}>
+	{BEGIN id_fieldheader}
+	<b>{$label users id}</b>
+	{END id_fieldheader}
+</th>
+{END id_fieldheadercolumn}
+	{BEGIN first_name_fieldheadercolumn}
+<th class="runner-cc {$first_name_class}" {$first_name_style}>
+	{BEGIN first_name_fieldheader}
+	<b>{$label users first_name}</b>
+	{END first_name_fieldheader}
+</th>
+{END first_name_fieldheadercolumn}
+	{BEGIN last_name_fieldheadercolumn}
+<th class="runner-cc {$last_name_class}" {$last_name_style}>
+	{BEGIN last_name_fieldheader}
+	<b>{$label users last_name}</b>
+	{END last_name_fieldheader}
+</th>
+{END last_name_fieldheadercolumn}
+	{BEGIN address1_fieldheadercolumn}
+<th class="runner-cc {$address1_class}" {$address1_style}>
+	{BEGIN address1_fieldheader}
+	<b>{$label users address1}</b>
+	{END address1_fieldheader}
+</th>
+{END address1_fieldheadercolumn}
+	{BEGIN address2_fieldheadercolumn}
+<th class="runner-cc {$address2_class}" {$address2_style}>
+	{BEGIN address2_fieldheader}
+	<b>{$label users address2}</b>
+	{END address2_fieldheader}
+</th>
+{END address2_fieldheadercolumn}
+	{BEGIN address3_fieldheadercolumn}
+<th class="runner-cc {$address3_class}" {$address3_style}>
+	{BEGIN address3_fieldheader}
+	<b>{$label users address3}</b>
+	{END address3_fieldheader}
+</th>
+{END address3_fieldheadercolumn}
+	{BEGIN city_fieldheadercolumn}
+<th class="runner-cc {$city_class}" {$city_style}>
+	{BEGIN city_fieldheader}
+	<b>{$label users city}</b>
+	{END city_fieldheader}
+</th>
+{END city_fieldheadercolumn}
+	{BEGIN state_fieldheadercolumn}
+<th class="runner-cc {$state_class}" {$state_style}>
+	{BEGIN state_fieldheader}
+	<b>{$label users state}</b>
+	{END state_fieldheader}
+</th>
+{END state_fieldheadercolumn}
+	{BEGIN zip_fieldheadercolumn}
+<th class="runner-cc {$zip_class}" {$zip_style}>
+	{BEGIN zip_fieldheader}
+	<b>{$label users zip}</b>
+	{END zip_fieldheader}
+</th>
+{END zip_fieldheadercolumn}
+	{BEGIN email_fieldheadercolumn}
+<th class="runner-cc {$email_class}" {$email_style}>
+	{BEGIN email_fieldheader}
+	<b>{$label users email}</b>
+	{END email_fieldheader}
+</th>
+{END email_fieldheadercolumn}
+	{BEGIN phonetype_fieldheadercolumn}
+<th class="runner-cc {$phonetype_class}" {$phonetype_style}>
+	{BEGIN phonetype_fieldheader}
+	<b>{$label users phonetype}</b>
+	{END phonetype_fieldheader}
+</th>
+{END phonetype_fieldheadercolumn}
+	{BEGIN phonenumber_fieldheadercolumn}
+<th class="runner-cc {$phonenumber_class}" {$phonenumber_style}>
+	{BEGIN phonenumber_fieldheader}
+	<b>{$label users phonenumber}</b>
+	{END phonenumber_fieldheader}
+</th>
+{END phonenumber_fieldheadercolumn}
+		
+	<th class="rnr-edge">&nbsp;</th>
+	{BEGIN endrecordheader_block}
+	<th class="rnr-cs">&nbsp;</th>
+	{END endrecordheader_block}
+	{END record_header}
+</tr>
+{END grid_header}
+
+	</thead>
+	<tbody>	
+	{BEGIN grid_row}
+	<tr class="rnr-row style1 {$rowclass}" {$rowattrs} {$rowstyle}>
+		{BEGIN grid_record}
+				{BEGIN id_fieldcolumn}
+<td  class="runner-cc {$id_class}" {$id_style} {$recordattrs}>
+	{$id_value}
+</td>
+{END id_fieldcolumn}
+	{BEGIN first_name_fieldcolumn}
+<td  class="runner-cc {$first_name_class}" {$first_name_style} {$recordattrs}>
+	{$first_name_value}
+</td>
+{END first_name_fieldcolumn}
+	{BEGIN last_name_fieldcolumn}
+<td  class="runner-cc {$last_name_class}" {$last_name_style} {$recordattrs}>
+	{$last_name_value}
+</td>
+{END last_name_fieldcolumn}
+	{BEGIN address1_fieldcolumn}
+<td  class="runner-cc {$address1_class}" {$address1_style} {$recordattrs}>
+	{$address1_value}
+</td>
+{END address1_fieldcolumn}
+	{BEGIN address2_fieldcolumn}
+<td  class="runner-cc {$address2_class}" {$address2_style} {$recordattrs}>
+	{$address2_value}
+</td>
+{END address2_fieldcolumn}
+	{BEGIN address3_fieldcolumn}
+<td  class="runner-cc {$address3_class}" {$address3_style} {$recordattrs}>
+	{$address3_value}
+</td>
+{END address3_fieldcolumn}
+	{BEGIN city_fieldcolumn}
+<td  class="runner-cc {$city_class}" {$city_style} {$recordattrs}>
+	{$city_value}
+</td>
+{END city_fieldcolumn}
+	{BEGIN state_fieldcolumn}
+<td  class="runner-cc {$state_class}" {$state_style} {$recordattrs}>
+	{$state_value}
+</td>
+{END state_fieldcolumn}
+	{BEGIN zip_fieldcolumn}
+<td  class="runner-cc {$zip_class}" {$zip_style} {$recordattrs}>
+	{$zip_value}
+</td>
+{END zip_fieldcolumn}
+	{BEGIN email_fieldcolumn}
+<td  class="runner-cc {$email_class}" {$email_style} {$recordattrs}>
+	{$email_value}
+</td>
+{END email_fieldcolumn}
+	{BEGIN phonetype_fieldcolumn}
+<td  class="runner-cc {$phonetype_class}" {$phonetype_style} {$recordattrs}>
+	{$phonetype_value}
+</td>
+{END phonetype_fieldcolumn}
+	{BEGIN phonenumber_fieldcolumn}
+<td  class="runner-cc {$phonenumber_class}" {$phonenumber_style} {$recordattrs}>
+	{$phonenumber_value}
+</td>
+{END phonenumber_fieldcolumn}
+
+		<td class="rnr-edge" {$recordattrs}>&nbsp;</td>
+		{BEGIN endrecord_block}
+		<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+		{END endrecord_block}
+										
+		{END grid_record}
+
+	</tr>
+		{BEGIN details_row}
+	<tr class="rnr-row style1 {$rowclass}" {$rowattrs} {$rowstyle}>
+		{BEGIN details_record}
+		<td  class="rnr-edge" colspan="13">
+			{BEGIN details_table}
+			{$details}
+			{END details_table}
+		</td>
+		{BEGIN endrecord_block}
+		<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+		{END endrecord_block}
+		{END details_record}
+	</tr>
+	{END details_row}
+{END grid_row}
+
+
+	
+	</tbody>
+</table>
+
+{END grid_block}
+
+
+
+{END container_grid}
+
+
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>
