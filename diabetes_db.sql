@@ -50,7 +50,7 @@ CREATE TABLE `insulin` (
   `user_id` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
-CREATE TABLE `insulintype` (
+CREATE TABLE `insulin_type` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `type` varchar(45) DEFAULT NULL,
   `hide` tinyint(4) DEFAULT NULL,
@@ -93,7 +93,7 @@ CREATE TABLE `medication` (
   `comments` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-CREATE TABLE `medicationdata` (
+CREATE TABLE `medicine_type` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `medication` varchar(50) DEFAULT NULL,
   `dose` varchar(50) DEFAULT NULL,
@@ -117,7 +117,7 @@ CREATE TABLE `readings` (
   `user_id` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=53 DEFAULT CHARSET=utf8mb4;
-CREATE TABLE `samplesite` (
+CREATE TABLE `site_type` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `site` varchar(45) DEFAULT NULL,
   `hide` tinyint(4) DEFAULT NULL,
@@ -129,7 +129,7 @@ CREATE TABLE `test_types` (
   `hide` tinyint(4) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=utf8mb4;
-CREATE TABLE `timeperiod` (
+CREATE TABLE `period_type` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `period` varchar(45) DEFAULT NULL,
   `hide` tinyint(4) DEFAULT NULL,
