@@ -1274,13 +1274,13 @@ class CrossTableReport
 			$isDB = true;
 		if("labtest" == $this->xml_array['tables'][0])
 			$isDB = true;
-		if("insulintype" == $this->xml_array['tables'][0])
+		if("insulin_type" == $this->xml_array['tables'][0])
 			$isDB = true;
-		if("samplesite" == $this->xml_array['tables'][0])
+		if("site_type" == $this->xml_array['tables'][0])
 			$isDB = true;
-		if("timeperiod" == $this->xml_array['tables'][0])
+		if("period_type" == $this->xml_array['tables'][0])
 			$isDB = true;
-		if("medicationdata" == $this->xml_array['tables'][0])
+		if("medicine_type" == $this->xml_array['tables'][0])
 			$isDB = true;
 		if("test_types" == $this->xml_array['tables'][0])
 			$isDB = true;

@@ -205,7 +205,7 @@ function getMenuNodes_main($menuNodesObject)
 	$menuNode["name"] = "Insulin Type";
 	$menuNode["href"] = "mypage.htm";
 	$menuNode["type"] = "Leaf";
-	$menuNode["table"] = "insulintype";
+	$menuNode["table"] = "insulin_type";
 	$menuNode["style"] = "";
 	$menuNode["params"] = "";
 	$menuNode["parent"] = "9";
@@ -220,7 +220,7 @@ function getMenuNodes_main($menuNodesObject)
 	$menuNode["name"] = "Medicine";
 	$menuNode["href"] = "mypage.htm";
 	$menuNode["type"] = "Leaf";
-	$menuNode["table"] = "medicationdata";
+	$menuNode["table"] = "medicine_type";
 	$menuNode["style"] = "";
 	$menuNode["params"] = "";
 	$menuNode["parent"] = "9";
@@ -235,7 +235,7 @@ function getMenuNodes_main($menuNodesObject)
 	$menuNode["name"] = "Sample Site";
 	$menuNode["href"] = "mypage.htm";
 	$menuNode["type"] = "Leaf";
-	$menuNode["table"] = "samplesite";
+	$menuNode["table"] = "site_type";
 	$menuNode["style"] = "";
 	$menuNode["params"] = "";
 	$menuNode["parent"] = "9";
@@ -265,7 +265,7 @@ function getMenuNodes_main($menuNodesObject)
 	$menuNode["name"] = "Time Period";
 	$menuNode["href"] = "mypage.htm";
 	$menuNode["type"] = "Leaf";
-	$menuNode["table"] = "timeperiod";
+	$menuNode["table"] = "period_type";
 	$menuNode["style"] = "";
 	$menuNode["params"] = "";
 	$menuNode["parent"] = "9";

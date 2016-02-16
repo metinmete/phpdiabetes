@@ -271,13 +271,13 @@ function checkTableName($shortTName, $type=false)
 		return true;
 	if ("labtest" == $shortTName && ($type===false || ($type!==false && $type == 0)))
 		return true;
-	if ("insulintype" == $shortTName && ($type===false || ($type!==false && $type == 0)))
+	if ("insulin_type" == $shortTName && ($type===false || ($type!==false && $type == 0)))
 		return true;
-	if ("samplesite" == $shortTName && ($type===false || ($type!==false && $type == 0)))
+	if ("site_type" == $shortTName && ($type===false || ($type!==false && $type == 0)))
 		return true;
-	if ("timeperiod" == $shortTName && ($type===false || ($type!==false && $type == 0)))
+	if ("period_type" == $shortTName && ($type===false || ($type!==false && $type == 0)))
 		return true;
-	if ("medicationdata" == $shortTName && ($type===false || ($type!==false && $type == 0)))
+	if ("medicine_type" == $shortTName && ($type===false || ($type!==false && $type == 0)))
 		return true;
 	if ("test_types" == $shortTName && ($type===false || ($type!==false && $type == 0)))
 		return true;
@@ -346,10 +346,10 @@ function GetTablesList($pdfMode = false)
 		$arr[]="exercise";
 		$arr[]="medication";
 		$arr[]="labtest";
-		$arr[]="insulintype";
-		$arr[]="samplesite";
-		$arr[]="timeperiod";
-		$arr[]="medicationdata";
+		$arr[]="insulin_type";
+		$arr[]="site_type";
+		$arr[]="period_type";
+		$arr[]="medicine_type";
 		$arr[]="test_types";
 		$arr[]="food_items";
 		$arr[]="exercise_types";
@@ -1000,19 +1000,19 @@ function GetUserPermissions($table="")
 	{
 			$permissions =  "ADESPIM";
 	}
-	if($table=="insulintype")
+	if($table=="insulin_type")
 	{
 			$permissions =  "ADESPIM";
 	}
-	if($table=="samplesite")
+	if($table=="site_type")
 	{
 			$permissions =  "ADESPIM";
 	}
-	if($table=="timeperiod")
+	if($table=="period_type")
 	{
 			$permissions =  "ADESPIM";
 	}
-	if($table=="medicationdata")
+	if($table=="medicine_type")
 	{
 			$permissions =  "ADESPIM";
 	}

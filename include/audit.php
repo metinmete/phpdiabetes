@@ -327,19 +327,19 @@ class AuditTrailTable
 		{
 			return false;
 		}
-		if($table=="insulintype")
+		if($table=="insulin_type")
 		{
 			return false;
 		}
-		if($table=="samplesite")
+		if($table=="site_type")
 		{
 			return false;
 		}
-		if($table=="timeperiod")
+		if($table=="period_type")
 		{
 			return false;
 		}
-		if($table=="medicationdata")
+		if($table=="medicine_type")
 		{
 			return false;
 		}
@@ -690,19 +690,19 @@ class AuditTrailFile
 		{
 			return false;
 		}
-		if($table=="insulintype")
+		if($table=="insulin_type")
 		{
 			return false;
 		}
-		if($table=="samplesite")
+		if($table=="site_type")
 		{
 			return false;
 		}
-		if($table=="timeperiod")
+		if($table=="period_type")
 		{
 			return false;
 		}
-		if($table=="medicationdata")
+		if($table=="medicine_type")
 		{
 			return false;
 		}

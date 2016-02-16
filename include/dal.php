@@ -53,15 +53,15 @@ class tDAL
 	var $tbldiabetes_at_localhost__food_items;
 	var $tbldiabetes_at_localhost__inject_type;
 	var $tbldiabetes_at_localhost__insulin;
-	var $tbldiabetes_at_localhost__insulintype;
+	var $tbldiabetes_at_localhost__insulin_type;
 	var $tbldiabetes_at_localhost__labtest;
 	var $tbldiabetes_at_localhost__meal;
 	var $tbldiabetes_at_localhost__medication;
-	var $tbldiabetes_at_localhost__medicationdata;
+	var $tbldiabetes_at_localhost__medicine_type;
+	var $tbldiabetes_at_localhost__period_type;
 	var $tbldiabetes_at_localhost__readings;
-	var $tbldiabetes_at_localhost__samplesite;
+	var $tbldiabetes_at_localhost__site_type;
 	var $tbldiabetes_at_localhost__test_types;
-	var $tbldiabetes_at_localhost__timeperiod;
 	var $tbldiabetes_at_localhost__users;
 	var $lstTables;
 	var $Table = array();
@@ -76,15 +76,15 @@ class tDAL
 		$this->lstTables[] = array("name" => "food_items", "varname" => "diabetes_at_localhost__food_items", "altvarname" => "food_items", "connId" => "diabetes_at_localhost", "schema" => "", "connName" => "diabetes at localhost");
 		$this->lstTables[] = array("name" => "inject_type", "varname" => "diabetes_at_localhost__inject_type", "altvarname" => "inject_type", "connId" => "diabetes_at_localhost", "schema" => "", "connName" => "diabetes at localhost");
 		$this->lstTables[] = array("name" => "insulin", "varname" => "diabetes_at_localhost__insulin", "altvarname" => "insulin", "connId" => "diabetes_at_localhost", "schema" => "", "connName" => "diabetes at localhost");
-		$this->lstTables[] = array("name" => "insulintype", "varname" => "diabetes_at_localhost__insulintype", "altvarname" => "insulintype", "connId" => "diabetes_at_localhost", "schema" => "", "connName" => "diabetes at localhost");
+		$this->lstTables[] = array("name" => "insulin_type", "varname" => "diabetes_at_localhost__insulin_type", "altvarname" => "insulin_type", "connId" => "diabetes_at_localhost", "schema" => "", "connName" => "diabetes at localhost");
 		$this->lstTables[] = array("name" => "labtest", "varname" => "diabetes_at_localhost__labtest", "altvarname" => "labtest", "connId" => "diabetes_at_localhost", "schema" => "", "connName" => "diabetes at localhost");
 		$this->lstTables[] = array("name" => "meal", "varname" => "diabetes_at_localhost__meal", "altvarname" => "meal", "connId" => "diabetes_at_localhost", "schema" => "", "connName" => "diabetes at localhost");
 		$this->lstTables[] = array("name" => "medication", "varname" => "diabetes_at_localhost__medication", "altvarname" => "medication", "connId" => "diabetes_at_localhost", "schema" => "", "connName" => "diabetes at localhost");
-		$this->lstTables[] = array("name" => "medicationdata", "varname" => "diabetes_at_localhost__medicationdata", "altvarname" => "medicationdata", "connId" => "diabetes_at_localhost", "schema" => "", "connName" => "diabetes at localhost");
+		$this->lstTables[] = array("name" => "medicine_type", "varname" => "diabetes_at_localhost__medicine_type", "altvarname" => "medicine_type", "connId" => "diabetes_at_localhost", "schema" => "", "connName" => "diabetes at localhost");
+		$this->lstTables[] = array("name" => "period_type", "varname" => "diabetes_at_localhost__period_type", "altvarname" => "period_type", "connId" => "diabetes_at_localhost", "schema" => "", "connName" => "diabetes at localhost");
 		$this->lstTables[] = array("name" => "readings", "varname" => "diabetes_at_localhost__readings", "altvarname" => "readings", "connId" => "diabetes_at_localhost", "schema" => "", "connName" => "diabetes at localhost");
-		$this->lstTables[] = array("name" => "samplesite", "varname" => "diabetes_at_localhost__samplesite", "altvarname" => "samplesite", "connId" => "diabetes_at_localhost", "schema" => "", "connName" => "diabetes at localhost");
+		$this->lstTables[] = array("name" => "site_type", "varname" => "diabetes_at_localhost__site_type", "altvarname" => "site_type", "connId" => "diabetes_at_localhost", "schema" => "", "connName" => "diabetes at localhost");
 		$this->lstTables[] = array("name" => "test_types", "varname" => "diabetes_at_localhost__test_types", "altvarname" => "test_types", "connId" => "diabetes_at_localhost", "schema" => "", "connName" => "diabetes at localhost");
-		$this->lstTables[] = array("name" => "timeperiod", "varname" => "diabetes_at_localhost__timeperiod", "altvarname" => "timeperiod", "connId" => "diabetes_at_localhost", "schema" => "", "connName" => "diabetes at localhost");
 		$this->lstTables[] = array("name" => "users", "varname" => "diabetes_at_localhost__users", "altvarname" => "users", "connId" => "diabetes_at_localhost", "schema" => "", "connName" => "diabetes at localhost");
 	}
 

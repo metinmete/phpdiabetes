@@ -276,10 +276,10 @@ class ConnectionManager
 		$connectionsIds["exercise"] = "diabetes_at_localhost";
 		$connectionsIds["medication"] = "diabetes_at_localhost";
 		$connectionsIds["labtest"] = "diabetes_at_localhost";
-		$connectionsIds["insulintype"] = "diabetes_at_localhost";
-		$connectionsIds["samplesite"] = "diabetes_at_localhost";
-		$connectionsIds["timeperiod"] = "diabetes_at_localhost";
-		$connectionsIds["medicationdata"] = "diabetes_at_localhost";
+		$connectionsIds["insulin_type"] = "diabetes_at_localhost";
+		$connectionsIds["site_type"] = "diabetes_at_localhost";
+		$connectionsIds["period_type"] = "diabetes_at_localhost";
+		$connectionsIds["medicine_type"] = "diabetes_at_localhost";
 		$connectionsIds["test_types"] = "diabetes_at_localhost";
 		$connectionsIds["food_items"] = "diabetes_at_localhost";
 		$connectionsIds["exercise_types"] = "diabetes_at_localhost";

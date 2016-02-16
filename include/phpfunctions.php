@@ -831,19 +831,19 @@ function GetDefaultValue($field, $ptype, $table="")
 	global $strTableName;
 	if(!$table)
 		$table=$strTableName;
-				if($table=="insulintype" && $field=="hide")
+				if($table=="insulin_type" && $field=="hide")
 	{
 		return "hide = 0";
 	}
-				if($table=="samplesite" && $field=="hide")
+				if($table=="site_type" && $field=="hide")
 	{
 		return "hide = 0";
 	}
-				if($table=="timeperiod" && $field=="hide")
+				if($table=="period_type" && $field=="hide")
 	{
 		return "hide = 0";
 	}
-				if($table=="medicationdata" && $field=="hide")
+				if($table=="medicine_type" && $field=="hide")
 	{
 		return "hide = 0";
 	}

@@ -2505,14 +2505,14 @@ function GetTableURL($table = "")
 		return "medication";
 	if("labtest" == $table)
 		return "labtest";
-	if("insulintype" == $table)
-		return "insulintype";
-	if("samplesite" == $table)
-		return "samplesite";
-	if("timeperiod" == $table)
-		return "timeperiod";
-	if("medicationdata" == $table)
-		return "medicationdata";
+	if("insulin_type" == $table)
+		return "insulin_type";
+	if("site_type" == $table)
+		return "site_type";
+	if("period_type" == $table)
+		return "period_type";
+	if("medicine_type" == $table)
+		return "medicine_type";
 	if("test_types" == $table)
 		return "test_types";
 	if("food_items" == $table)
@@ -2547,14 +2547,14 @@ function GetTableByShort($shortTName = "")
 		return "medication";
 	if("labtest" == $shortTName)
 		return "labtest";
-	if("insulintype" == $shortTName)
-		return "insulintype";
-	if("samplesite" == $shortTName)
-		return "samplesite";
-	if("timeperiod" == $shortTName)
-		return "timeperiod";
-	if("medicationdata" == $shortTName)
-		return "medicationdata";
+	if("insulin_type" == $shortTName)
+		return "insulin_type";
+	if("site_type" == $shortTName)
+		return "site_type";
+	if("period_type" == $shortTName)
+		return "period_type";
+	if("medicine_type" == $shortTName)
+		return "medicine_type";
 	if("test_types" == $shortTName)
 		return "test_types";
 	if("food_items" == $shortTName)

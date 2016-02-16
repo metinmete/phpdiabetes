@@ -40,17 +40,17 @@ function InitLookupLinks()
 
 	$lookupTableLinks = array();
 
-	$lookupTableLinks["timeperiod"]["readings.time_period"]["edit"] = array("table" => "readings", "field" => "time_period", "page" => "edit");
-	$lookupTableLinks["samplesite"]["readings.sample_site"]["edit"] = array("table" => "readings", "field" => "sample_site", "page" => "edit");
-	$lookupTableLinks["timeperiod"]["insulin.time_period"]["edit"] = array("table" => "insulin", "field" => "time_period", "page" => "edit");
-	$lookupTableLinks["insulintype"]["insulin.type"]["edit"] = array("table" => "insulin", "field" => "type", "page" => "edit");
+	$lookupTableLinks["period_type"]["readings.time_period"]["edit"] = array("table" => "readings", "field" => "time_period", "page" => "edit");
+	$lookupTableLinks["site_type"]["readings.sample_site"]["edit"] = array("table" => "readings", "field" => "sample_site", "page" => "edit");
+	$lookupTableLinks["period_type"]["insulin.time_period"]["edit"] = array("table" => "insulin", "field" => "time_period", "page" => "edit");
+	$lookupTableLinks["insulin_type"]["insulin.type"]["edit"] = array("table" => "insulin", "field" => "type", "page" => "edit");
 	$lookupTableLinks["inject_type"]["insulin.inject_type"]["edit"] = array("table" => "insulin", "field" => "inject_type", "page" => "edit");
-	$lookupTableLinks["timeperiod"]["exercise.time_period"]["edit"] = array("table" => "exercise", "field" => "time_period", "page" => "edit");
-	$lookupTableLinks["timeperiod"]["medication.time_period"]["edit"] = array("table" => "medication", "field" => "time_period", "page" => "edit");
-	$lookupTableLinks["medicationdata"]["medication.medication"]["edit"] = array("table" => "medication", "field" => "medication", "page" => "edit");
+	$lookupTableLinks["period_type"]["exercise.time_period"]["edit"] = array("table" => "exercise", "field" => "time_period", "page" => "edit");
+	$lookupTableLinks["period_type"]["medication.time_period"]["edit"] = array("table" => "medication", "field" => "time_period", "page" => "edit");
+	$lookupTableLinks["medicine_type"]["medication.medication"]["edit"] = array("table" => "medication", "field" => "medication", "page" => "edit");
 	$lookupTableLinks["test_types"]["labtest.type"]["edit"] = array("table" => "labtest", "field" => "type", "page" => "edit");
-	$lookupTableLinks["timeperiod"]["Readings_Chart.time_period"]["search"] = array("table" => "Readings Chart", "field" => "time_period", "page" => "search");
-	$lookupTableLinks["samplesite"]["Readings_Chart.sample_site"]["search"] = array("table" => "Readings Chart", "field" => "sample_site", "page" => "search");
+	$lookupTableLinks["period_type"]["Readings_Chart.time_period"]["search"] = array("table" => "Readings Chart", "field" => "time_period", "page" => "search");
+	$lookupTableLinks["site_type"]["Readings_Chart.sample_site"]["search"] = array("table" => "Readings Chart", "field" => "sample_site", "page" => "search");
 }
 
 ?>

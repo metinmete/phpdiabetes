@@ -467,13 +467,13 @@ class Chart
 			return true;
 		if("labtest" == $this->chrt_array['tables'][0])
 			return true;
-		if("insulintype" == $this->chrt_array['tables'][0])
+		if("insulin_type" == $this->chrt_array['tables'][0])
 			return true;
-		if("samplesite" == $this->chrt_array['tables'][0])
+		if("site_type" == $this->chrt_array['tables'][0])
 			return true;
-		if("timeperiod" == $this->chrt_array['tables'][0])
+		if("period_type" == $this->chrt_array['tables'][0])
 			return true;
-		if("medicationdata" == $this->chrt_array['tables'][0])
+		if("medicine_type" == $this->chrt_array['tables'][0])
 			return true;
 		if("test_types" == $this->chrt_array['tables'][0])
 			return true;

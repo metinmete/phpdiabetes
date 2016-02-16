@@ -948,7 +948,7 @@ $tdatamedication[".printFields"][] = "comments";
 
 // Begin Lookup settings
 				$edata["LookupType"] = 2;
-	$edata["LookupTable"] = "timeperiod";
+	$edata["LookupTable"] = "period_type";
 		$edata["autoCompleteFieldsOnEdit"] = 0;
 	$edata["autoCompleteFields"] = array();
 		$edata["LCType"] = 0;
@@ -1097,7 +1097,7 @@ $tdatamedication[".printFields"][] = "comments";
 
 // Begin Lookup settings
 				$edata["LookupType"] = 2;
-	$edata["LookupTable"] = "medicationdata";
+	$edata["LookupTable"] = "medicine_type";
 		$edata["autoCompleteFieldsOnEdit"] = 0;
 	$edata["autoCompleteFields"] = array();
 		$edata["LCType"] = 0;
